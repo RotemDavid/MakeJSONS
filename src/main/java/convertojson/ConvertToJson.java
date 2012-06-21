@@ -62,8 +62,8 @@ public class ConvertToJson {
                 Field[] SMClasses = getAllFields(f.getType());
                 JSONObject jsonObj = new JSONObject();
 
-                jsonObj.put("Name", f.getGenericType().toString());
-                jsonObj.put("replace", f.getName());
+                jsonObj.put("name", f.getGenericType().toString());
+                jsonObj.put("replace", f.getGenericType().toString());
                 jObj.put(f.getName(), jsonObj);
                 generateJSON(f.getType());
             }
